@@ -1,0 +1,120 @@
+/** Variables **/
+$blue: blue;
+$blueDarker: #00008f;
+$red: red;
+$redDarker: #980000;
+
+
+.arcade {
+  background-color: #000;
+  border: 20px solid $red;
+  color: #fff;
+  font-family: 'PressStart', sans-serif;
+  padding: 5px;
+  text-align: center;
+
+  a {
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 15px;
+    }
+  }
+}
+
+.arcade__screen {
+  border: 2px solid $red;
+  margin: auto;
+}
+
+.arcade__controls {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  button {
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-family: 'PressStart', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.controls__arrows {
+  position: relative;
+
+  button {
+    background-color: $red;
+    border: 5px solid $redDarker;
+    height: 45px;
+    width: 45px;
+  }
+  .arrow__up {
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .arrow__right {
+    left: 40px;
+    top: 40px;
+    transform: rotateZ(-90deg);
+  }
+  .arrow__down {
+    left: 0;
+    top: 80px;
+  }
+  .arrow__left {
+    left: -40px;
+    top: 40px;
+    transform: rotateZ(90deg);
+  }
+}
+
+.controls__buttons {
+  position: relative;
+  .button__action {
+    background-color: $blue;
+    border: 5px solid $blueDarker;
+    height: 70px;
+    left: -70px;
+    top: 25px;
+    width: 70px;
+  }
+}
+
+.author {
+  font-size: 0.6em;
+}
+
+.game__name {
+  padding: 3px;
+}
+
+.game__name--active {
+  background-color: #fff;
+  color: #000;
+  outline: 0;
+}
+
+.game-screen {
+}
+
+.game-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 3px;
+}
